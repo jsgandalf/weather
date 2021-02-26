@@ -1,0 +1,5 @@
+<form #myForm="ngForm" (ngSubmit)="searchWeather()">
+    <input required type="text" class="form-control" id="city" [(ngModel)]='city' name="city">
+    &nbsp;
+    <button [disabled]="!myForm.form.valid" type="submit">Submit</button>
+</form>

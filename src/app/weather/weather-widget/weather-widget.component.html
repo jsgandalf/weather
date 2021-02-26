@@ -1,0 +1,5 @@
+<div *ngIf="weatherReport">
+    <h3>{{weatherReport.weather[0].description}}</h3>
+    <img src="http://openweathermap.org/img/wn/{{weatherReport.weather[0].icon}}@2x.png" />
+    <h1>{{weatherReport.main.temp}}</h1>
+</div>
